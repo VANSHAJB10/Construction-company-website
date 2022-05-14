@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .card {
+
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        p {
+            font-family: Verdana, sans-serif;
+            font-size: larger
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--mainclr);
+            padding: 15px;
+            /* margin-top: 15px;*/
+            font-size: large;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: green;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="about-section">
+        <h1>About Us</h1>
+        <h2>Time passed, Faith grew</h2>
+        <p>VR constructions pvt. Ltd. is determined on providing pleasure in corporeal formations that shows to
+            Gem's character and nature.
+        </p>
+        <p>
+            VR constructions pvt. Ltd. was launched by Mr.Vanshaj Bajaj & Mr. Rubesh Raman, Professionally qualified
+            civil engineers. The company entered on the path to glory in
+            2011, as the leading builders and developers of properties in Jalandhar.
+        </p>
+        <p>
+            During the course of time by one project a year our company had grown to a stage of handling
+            multiple projects at a time. Thus establishing VR constructions pvt. Ltd. as one of the most revered
+            developers in Jalandhar. Eventually, it was converted into a Limited company as VR constructions pvt. Ltd.
+            (Jalandhar) Limited.
+
+            The investors of any kind are quality conscious. And the acquirers obviously demand only the
+            pre-eminent. VR constructions pvt. Ltd. (Jalandhar) an ISO 9005 organisation, is one among the
+            very few developers in Jalandhar that follow inflexible international quality standards.
+
+        </p>
+        <p>VR constructions pvt. Ltd. (Jalandhar) Limited has also got a sister Concern, viz. Cubic Builders Pvt. Ltd.,
+            functioning in the same office premises with the same directors engaged in
+            similar activities as that of VR constructions pvt. Ltd (Jalandhar).
+
+            VR constructions pvt. Ltd (Jalandhar) Limited consist of over 2500 plus satisfied customers. The
+            accomplishment of construction area has crossed over 3 million sq.ft. And the company is well
+            known for having provided secured apartments, properties, flats and living spaces of various
+            kinds in Phagwara. VR constructions pvt. Ltd (Jalandhar) Limited is also prominent in providing
+            properties for sale in Chandigarh.</p>
+    </div>
+
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="./images/avatar.jpg" alt="ME" style="width:100%">
+                <div class="container">
+                    <h2>Vanshaj Bajaj</h2>
+                    <p class="title">CEO & Founder</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>vfounder@gmail.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="./images/avatar.jpg" alt="Me" style="width:100%">
+                <div class="container">
+                    <h2>Rubesh raman</h2>
+                    <p class="title">Art Director</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>rdirector@gmail.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="./images/avatar.jpg" alt="Me" style="width:100%">
+                <div class="container">
+                    <h2>Vanshaj Bajaj</h2>
+                    <p class="title">Designer</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>vdesigner@gmail.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p><strong>Copyrights : <a href="https://github.com">VR Constructions</a><strong></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

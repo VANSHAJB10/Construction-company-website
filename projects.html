@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>Our Projects</title>
+      <style type="text/css">
+            * {
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+                  font-family: sans-serif;
+                  background-color: rgb(44, 96, 124);
+            }
+
+            input {
+                  display: none;
+            }
+
+            .container {
+                  width: 100%;
+                  text-align: center;
+
+            }
+
+            h1 {
+                  font-weight: normal;
+                  font-size: 60px;
+                  position: relative;
+                  margin: 100px;
+                  background-color: yellow;
+                  font-family: Stencil;
+                  letter-spacing: 2.5px;
+            }
+
+            h1::before {
+                  position: absolute;
+                  background-color: crimson;
+                  width: 100px;
+                  height: 3px;
+                  bottom: -10px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  animation: animate 4s linear infinite;
+
+
+            }
+
+            h2 {
+                  font-weight: lighter;
+                  font-size: 25px;
+                  position: relative;
+                  margin: 100px;
+                  background-color: burlywood;
+                  font-family: Cooper Black;
+                  letter-spacing: 1.5px;
+
+            }
+
+            @keyframes animate {
+                  0% {
+                        width: 100px;
+                  }
+
+                  50% {
+                        width: 200px;
+                  }
+
+                  100% {
+                        width: 100px;
+                  }
+            }
+
+            h3 {
+                  height: 10%;
+                  background-color: yellow;
+                  margin: 40px;
+                  font-size: 30px;
+                  line-height: 60px;
+                  padding: 0 50 50px;
+                  color: brown;
+                  font-family: cursive;
+                  vertical-align: middle;
+            }
+
+            img {
+                  display: inline-block;
+                  vertical-align: middle;
+            }
+
+            .pic {
+                  position: relative;
+                  height: 230px;
+                  border-radius: 10px;
+                  box-shadow: 3px 3px 5px;
+                  cursor: pointer;
+            }
+
+            .pic img {
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 10px;
+            }
+
+            .pic::before {
+                  content: "PROJECTS";
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  color: white;
+                  font-size: 25px;
+                  font-weight: bold;
+                  width: 100%;
+                  transition: 0.4s;
+                  transition-delay: 0.3s;
+            }
+
+            .pic::after {
+                  width: 100%;
+                  height: 100%;
+                  bottom: 0;
+                  left: 0;
+                  border-radius: 10px;
+                  height: 0;
+                  background-color: darkred;
+                  transition: 0.4s;
+
+            }
+
+            .wrapper {
+                  margin: 0 auto;
+                  width: 1000px;
+                  display: inline-block;
+                  vertical-align: middle;
+
+            }
+
+            .emulsion {
+                  width: 700px;
+                  height: 600px;
+                  display: inline-block;
+                  vertical-align: middle;
+
+            }
+
+            .bridge {
+                  width: 700px;
+                  height: 600px;
+                  display: inline-block;
+                  vertical-align: middle;
+
+            }
+
+            .house {
+                  width: 700px;
+                  height: 600px;
+                  display: inline-block;
+                  vertical-align: middle;
+            }
+
+            .bungalow {
+                  width: 700px;
+                  height: 600px;
+                  display: inline-block;
+                  vertical-align: middle;
+
+            }
+
+            .plot {
+                  width: 700px;
+                  height: 600px;
+                  display: inline-block;
+                  vertical-align: middle;
+
+            }
+
+            .highway {
+                  width: 700px;
+                  height: 600px;
+                  display: inline-block;
+                  vertical-align: middle;
+            }
+      </style>
+</head>
+
+<body background="projectback.jpg">
+      <div class="section">
+            <div class="container">
+                  <div class="content-section">
+                        <div class="title">
+                              <h1>PROJECTS</h1>
+                        </div>
+                        <div class="content">
+                              <h2>Our Projects</h2>
+                              <h3>House</h3>
+                              <div class="pic house">
+                                    <img src="./images/house.png">
+
+
+
+                                    <h3>Bungalow</h3>
+                                    <div class="pic bungalow">
+                                          <img src="./images/bungalow.png">
+
+
+                                          <h3>Plot Planning</h3>
+                                          <div class="pic plot">
+                                                <img src="./images/plot.png">
+
+
+                                                <h3>Highway</h3>
+                                                <div class="pic highway">
+                                                      <img src="./images/highway.png">
+
+
+                                                      <h3>Bridges</h3>
+                                                      <div class="pic bridge">
+                                                            <img src="./images/bridge.png ">
+
+
+                                                            <h3>Emulsion</h3>
+                                                            <div class="pic emulsion    ">
+                                                                  <img src="./images/emulsion.png">
+
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        
+</body>
+</html>

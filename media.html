@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <style type="text/css">
+            * {
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+                  font-family: sans-serif;
+                  background-color: #0c6ca3;
+            }
+
+            input {
+                  display: none;
+            }
+
+            .container {
+                  width: 100%;
+                  text-align: center;
+
+            }
+
+            h1 {
+                  font-weight: normal;
+                  font-size: 60px;
+                  position: relative;
+                  margin: 100px;
+                  background-color: yellow;
+                  font-family: Stencil;
+                  letter-spacing: 2.5px;
+            }
+
+            h1::before {
+                  content: '';
+                  position: absolute;
+                  background-color: crimson;
+                  width: 100px;
+                  height: 3px;
+
+                  bottom: -10px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  animation: animate 4s linear infinite;
+
+
+            }
+
+            h2 {
+                  font-weight: lighter;
+                  font-size: 40px;
+                  position: relative;
+                  margin: 100px;
+                  background-color: burlywood;
+                  font-family: Cooper Black;
+                  letter-spacing: 1.5px;
+
+            }
+
+            @keyframes animate {
+                  0% {
+                        width: 100px;
+                  }
+
+                  50% {
+                        width: 200px;
+                  }
+
+                  100% {
+                        width: 100px;
+                  }
+            }
+
+            h3 {
+                  height: 10%;
+                  background-color: cyan;
+                  margin: 40px;
+                  line-height: 60px;
+                  padding: 0 50 50px;
+                  color: brown;
+                  font-family: Cooper Black;
+                  vertical-align: middle;
+                  letter-spacing: 2px;
+                  font-size: 35px;
+            }
+
+            h4 {
+                  height: 10%;
+                  background-color: yellow;
+                  margin: 40px;
+                  line-height: 60px;
+                  padding: 0 50 50px;
+                  color: brown;
+                  font-family: Forte;
+                  vertical-align: middle;
+                  font-size: 25px;
+                  letter-spacing: 2px;
+            }
+
+            img {
+                  display: inline-block;
+                  vertical-align: middle;
+            }
+
+            .pic {
+                  position: relative;
+                  height: 230px;
+                  border-radius: 10px;
+                  box-shadow: 3px 3px 5px;
+                  cursor: pointer;
+            }
+
+            .pic img {
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 10px;
+            }
+
+            .pic::before {
+                  content: "PROJECTS";
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  color: white;
+                  font-size: 25px;
+                  font-weight: bold;
+                  width: 100%;
+
+                  opacity: 0%;
+                  transition: 0.4s;
+                  transition-delay: 0.3s;
+            }
+
+            .pic::after {
+
+                  width: 100%;
+                  height: 100%;
+                  bottom: 0;
+                  left: 0;
+                  border-radius: 10px;
+                  height: 0;
+                  background-color: darkred;
+                  transition: 0.4s;
+
+            }
+
+
+
+
+
+            .wrapper {
+                  margin: 0 auto;
+                  width: 1000px;
+                  display: inline-block;
+                  vertical-align: middle;
+
+            }
+
+            .completedhouse {
+                  width: 700px;
+                  height: 600px;
+                  display: inline-block;
+                  vertical-align: middle;
+
+            }
+
+            .highwaymedia {
+                  width: 700px;
+                  height: 600px;
+                  display: inline-block;
+                  vertical-align: middle;
+
+            }
+
+            .bridgemedia {
+                  width: 700px;
+                  height: 600px;
+                  display: inline-block;
+                  vertical-align: middle;
+            }
+
+            .upcomingbridge {
+                  width: 700px;
+                  height: 600px;
+                  display: inline-block;
+                  vertical-align: middle;
+
+            }
+
+            .upcomingflat {
+                  width: 700px;
+                  height: 600px;
+                  display: inline-block;
+                  vertical-align: middle;
+
+            }
+
+            .upcomingflyover {
+                  width: 700px;
+                  height: 600px;
+                  display: inline-block;
+                  vertical-align: middle;
+            }
+      </style>
+      <title>Media</title>
+      <meta charset="utf-8">
+      <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="stylemedia.css">
+</head>
+
+<body background="./images/mediaback.jpg">
+      <div class="section">
+            <div class="container">
+                  <div class="content-section">
+                        <div class="title">
+                              <h1>Media</h1>
+                        </div>
+                        <div class="content">
+                              <h2>Photo Gallery</h2>
+                              <h3>Our Completed projects</h3>
+                              <h4>Swastika Residentials</h4>
+                              <div class="pic completedhouse">
+                                    <img src="./images/completedhouse.jpg">
+                                    <h4>National Highway Jalandhar to Ludhiana</h4>
+                                    <div class="pic highwaymedia">
+                                          <img src="./images/highwaymedia.jpg">
+
+                                          <div class="pic bridgemedia">
+                                                <h4>Guru Teg Bahadur Bridge</h4>
+                                                <img src="./images/bridge.jpg">
+
+
+                                                <h3>Our Upcoming Projects</h3>
+                                                <div class="pic upcomingbridge">
+                                                      <h4>Shakti Bridge </h4>
+                                                      <img src="./images/upcomingbridge.png">
+                                                      <div class="pic upcomingflat">
+                                                            <h4>Kutumb Residentials</h4>
+                                                            <img src="./images/upcomingflat.png">
+                                                            <div class="pic upcomingflyover">
+                                                                  <h4>Adampur Flyover </h4>
+                                                                  <img src="./images/upcomingflyover.png">
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+</body>
+</html>

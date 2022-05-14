@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Career</title>
+
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+      background-color: rgb(217, 189, 95);
+    }
+
+    input {
+      display: none;
+    }
+
+    .container {
+      width: 100%;
+      text-align: center;
+
+    }
+
+    h1 {
+      font-weight: normal;
+      font-size: 60px;
+      position: relative;
+      margin: 100px;
+      background-color: yellow;
+      font-family: Stencil;
+      letter-spacing: 2.5px;
+      text-align: center;
+    }
+
+    h1::before {
+
+      position: absolute;
+      background-color: crimson;
+      width: 100px;
+      height: 3px;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: animate 4s linear infinite;
+
+
+    }
+
+    h2 {
+      font-weight: lighter;
+      font-size: 25px;
+      position: relative;
+      margin: 100px;
+      background-color: burlywood;
+      font-family: Cooper Black;
+      letter-spacing: 1.5px;
+      text-align: center;
+
+    }
+
+    h4 {
+      height: 10%;
+      margin: 40px;
+      line-height: 60px;
+      padding: 0 50 50px;
+      color: rgb(18, 211, 111);
+      vertical-align: middle;
+      text-align: center;
+      font-size: 45px;
+
+    }
+
+    h5 {
+      height: 10%;
+      margin: 40px;
+      line-height: 60px;
+      padding: 0 50 50px;
+      color: crimson;
+      vertical-align: middle;
+      text-align: center;
+      font-size: 35px;
+    }
+
+    @keyframes animate {
+      0% {
+        width: 100px;
+      }
+
+      50% {
+        width: 200px;
+      }
+
+      100% {
+        width: 100px;
+      }
+    }
+
+    p {
+      font-family: cursive;
+      letter-spacing: 2px;
+      color: azure;
+    }
+
+    body {
+      overflow-x: hidden;
+      font-family: 'PT Sans', sans-serif;
+    }
+
+    .section-container {
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .section-container .columns {
+      flex: 0 0 auto;
+      width: 50%;
+    }
+
+    .section-container .columns.image {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .section-container .columns.content .content-container {
+      padding: 40px 50px;
+    }
+
+    .section-container .columns.content .content-container h5 {
+      font-weight: 700;
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    .section-container .columns.content .content-container p {
+      font-weight: 400;
+      font-size: 16px;
+      margin-bottom: 20px;
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    @media screen and (max-width:767px) 
+    {
+      .section-container {
+        flex-flow: row wrap;
+      }
+
+      .section-container .columns.image {
+        display: block;
+        order: 1;
+        width: 100%;
+        height: 250px;
+      }
+
+      .section-container .columns.content {
+        display: block;
+        order: 2;
+        width: 100%;
+      }
+
+      .section-container .columns.content .content-container {
+        padding: 20px 35px;
+      }
+
+      .section-container .columns.content .content-container h5 {
+        margin-bottom: 5px;
+      }
+    }
+
+    .pic img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+
+    .pic::before {
+      content: "PROJECTS";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+      width: 100%;
+      opacity: 0%;
+      transition: 0.4s;
+      transition-delay: 0.3s;
+    }
+
+    .pic::after {
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      left: 0;
+      border-radius: 10px;
+      height: 0;
+      background-color: darkred;
+      transition: 0.4s;
+
+    }
+  </style>
+</head>
+
+<body background="careerbackground.jpg">
+  <div class="section-container">
+    <div class="columns image" style="background-image:url('../construction/images/engineerlogo.jpg')">
+      &nbsp;
+    </div>
+    <div class="columns content">
+      <div class="content-container">
+        <h1>Career</h1>
+        <h2>YOUR FUTURE OUR DREAM </h2>
+
+        <h4>Engineer</h4>
+        <p>
+          Use your competence at Dream House . We are fortunate to have some of the best people in the industry working
+          for it's growth and prosperity. The management is turn strives to empower them through strong leadership,
+          mentoring, and development along with due recognition of effort and providing a team spirit and a culture of
+          excellence.For more information about Civil Engineering call us on our Number +919876543210
+        <h5>Resident Engineer</h5>
+        <p>M.sc / B.sc Civil Engineering
+        <p>
+        <p>Minimum Experience 10 years</p>
+        <h5>Sub Engineer</h5>
+        <p>Diploma in Civil Engineering / B.tech</p>
+        <p>Minimum Experience 5 years</p>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="section-container">
+    <div class="columns content">
+      <div class="content-container">
+        <h4>Architect</h4>
+        <p>
+          Shape your imagination at Dream House, we are recruiting best out of best and we are happy if you work with
+          us. By time your experience and skills is making you out of the league as we have finest people here all
+          around the world with proper strong leadership, mentoring, and development will make us a one family .For more
+          information call us on our Number +91123456789.
+        <h5>Sr. Architect</h5>
+        <p>The candidate must have the knowledge of Architectural work and experience of construction sites with
+          bachelor degree of Architect.
+        </p>
+        <p>Minimum Experience 5 Years</p>
+        <h5>Jr. Architect</h5>
+        <p>The candiddate must have the Bachelor Degree of Architecture and excellent skill adoptable to contemporary
+          material design with the interest in interior designing.
+        </p>
+        <p>Minimum Experience 2 Years</p>
+        <h5>Assistant Architect</h5>
+        <p>The Candidate must have Bachelor Degree of Architecture with the capablity of using the Auto Cad, 3D Max etc.
+
+        </p>
+        <p> Minimum Experience Fresher</p>
+
+
+
+      </div>
+    </div>
+    <div class="columns image" style="background-image:url('./images/architect.jpg')">
+      &nbsp;
+    </div>
+  </div>
+  <div class="section-container">
+    <div class="columns image" style="background-image:url('./images/manager.png')">
+      &nbsp;
+    </div>
+    <div class="columns content">
+      <div class="content-container">
+        <h4>Manager</h4>
+
+        <p>Join our family use your Experience and Skills in shaping our Group.</p>
+        <h5>Project Manager</h5>
+        <p>Candidate must have experience of project completion and ability to run a Multi.Storied building project
+        </p>
+        <p> Minimum Experience 15 Years. </p>
+        <h5>Construction Manager</h5>
+        <p>Candidate must have the ability to run a Multi.Storied building project
+        </p>
+        <p> Minimum Experience 10 Years. </p>
+        <h5>Senior Site Manager</h5>
+        <p>Candidate must have the ability to run a different type Multi.Storied building project.
+        </p>
+        <p>Minimum Experience 5 Years. </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
